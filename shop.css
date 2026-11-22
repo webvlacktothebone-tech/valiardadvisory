@@ -1,0 +1,246 @@
+/* =================================
+   VARLIAD SHOP - COMPLETE STYLING
+================================= */
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f6f8;
+    color: #172438;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #101827;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    color: #d4af37;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #eeeeee;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #172438;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* SHOP INTRODUCTION */
+
+.shop-intro {
+    background: linear-gradient(
+        135deg,
+        #101827,
+        #263b56
+    );
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.shop-intro h2 {
+    color: #d4af37;
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.shop-intro p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* PRODUCT SECTION */
+
+.shop-products {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.shop-products h2 {
+    font-size: 30px;
+    color: #172438;
+    margin-bottom: 40px;
+}
+
+/* PRODUCT GRID */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+    gap: 30px;
+}
+
+/* PRODUCT CARDS */
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+/* PRODUCT IMAGES */
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* PRODUCT TYPE LABEL */
+
+.product-type {
+    display: inline-block;
+    margin-top: 16px;
+    color: #a58220;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+/* PRODUCT NAME */
+
+.product-card h3 {
+    color: #172438;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+/* PRODUCT DESCRIPTION */
+
+.product-card p {
+    color: #626b78;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* PRODUCT PRICE */
+
+.product-card h4 {
+    color: #a58220;
+    font-size: 21px;
+    margin: 18px 0;
+}
+
+/* ADD TO CART BUTTON */
+
+.cart-button {
+    width: 100%;
+    background-color: #101827;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cart-button:hover {
+    background-color: #d4af37;
+    color: #101827;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #101827;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #dddddd;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .shop-intro {
+        padding: 50px 18px;
+    }
+
+    .shop-intro h2 {
+        font-size: 26px;
+    }
+
+    .shop-products {
+        padding: 45px 6%;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 220px;
+    }
+}
